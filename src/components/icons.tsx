@@ -1,5 +1,3 @@
-import type { ReactNode } from 'react';
-
 const iconClass = 'w-10 h-10';
 
 export const CloudIcon = () => (

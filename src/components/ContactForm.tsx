@@ -21,7 +21,7 @@ const validationSchema = Yup.object().shape({
     .email('Invalid email address')
     .required('Email address is required'),
   phone: Yup.string()
-    .matches(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/, 'Invalid phone number')
+    .matches(/^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/, 'Invalid phone number')
     .required('Phone number is required'),
   city: Yup.string()
     .min(2, 'City must be at least 2 characters')
